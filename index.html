@@ -1,0 +1,114 @@
+<html lang="en">
+	<head>
+		<title>Broom & Bride</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="main">
+			<br>
+			<div class="calculator-wrap">
+				<div class="calculator">
+					<br><h2>Dowry calculator</h2><br>
+					<div class="category-box" class="name">
+						<label for="name">1. Bride's/Groom's name</label><br><br>
+						<input id="name" type="text" value="" placeholder="Enter the name">
+					</div>
+					<div class="category-box" class="bid">
+						<label for="bid">2. Starting bid</label><br><br>
+						<input id="bid" type="number" value="" placeholder="starting bid">
+					</div>
+					<div class="category-box" class="education">
+						<label for="education">3. Bride's/Groom's education</label><br><br>
+						<select id="education">
+							<option value="coefficient 1.5">Undergraduate degree</option>
+						    <option value="coefficient 1.2">College degree</option>
+						    <option value="coefficient 1.05">High school degree</option>
+						    <option value="coefficient 0.9">Middle school degree</option>
+						</select>
+					</div>
+					<div class="category-box" class="networth">
+						<label for="net_worth">4. Bride's/Groom's family net worth</label><br><br>
+						<select id="net_worth">
+							<option value="coefficient 2">More than 10,000$</option>
+						    <option value="coefficient 1.5">Between 5,000$ and 10,000$</option>
+						    <option value="coefficient 1.2">Less than 5,000$</option>
+						</select>
+					</div>
+					<div class="category-box" class="caste">
+						<label for="caste">5. Caste</label><br><br>
+						<select id="caste">
+							<option value="+100">Brahmin</option>
+						    <option value="+50">Kshatriya</option>
+						    <option value="+20">Vaishya</option>
+						    <option value="+10">Shudra</option>
+						    <option value="-50">Varna - untouchable</option>
+						</select>
+					</div>
+					<div class="category-box" class="skills">
+						<label>6. Bride's/Groom's skills:</label><br><br>
+						<div class="checkbox-box">
+							<input type="checkbox" name="skill" id="skills1" value="+10">
+							<label for="skills1">Playing on a musical instrument</label>
+						</div>
+						<div class="checkbox-box">
+							<input type="checkbox" name="skill" id="skills2" value="+20">
+							<label for="skills2">Good cook</label>
+						</div>
+						<div class="checkbox-box">
+							<input type="checkbox" name="skill" id="skills3" value="+15">
+							<label for="skills3">Easygoing character</label>
+						</div>
+						<div class="checkbox-box">
+							<input type="checkbox" name="skill" id="skills4" value="+10">
+							<label for="skills4">Sings well</label>
+						</div>
+					</div>
+					<div class="category-box" class="age">
+						<label>7. Bride's/Groom's age</label><br><br>
+						<div class="checkbox-box">
+							<input type="radio" name="age" id="age1" value="coefficient 1.5">
+							<label for="age1">Between 18-23</label>
+						</div>
+						<div class="checkbox-box">
+							<input type="radio" name="age" id="age2" value="coefficient 1.2">
+							<label for="age2">Between 24-27</label>
+						</div>
+						<div class="checkbox-box">
+							<input type="radio" name="age" id="age3" value="coefficient 0.95">
+							<label for="age3">28+</label>
+						</div>
+					</div>
+					<div class="category-box" class="reputation">
+						<label>8. Bride's/Groom's reputation</label><br><br>
+						<div class="checkbox-box">
+							<input type="checkbox" id="reputation1" value="coefficient 0.85">
+							<label for="reputation1">Gossips about his/her parent's attitude</label>
+						</div>
+						<div class="checkbox-box">
+							<input type="checkbox" id="reputation2" value="coefficient 0.9">
+							<label for="reputation2">Gossips about his/her character</label>
+						</div>
+						<div class="checkbox-box">
+							<input type="checkbox" id="reputation3" value="-20">
+							<label for="reputation3">General gossips around his/her person</label>
+						</div>
+					</div>
+					<div class="category-box" class="loveletter">
+						<label for="loveletter">9. Love letter</label><br><br>
+						<textarea name="loveletter" id="loveletter" cols="50" rows="5" maxlength="500"></textarea>
+					</div>
+					<button id="calculate">Calculate</button><br><br>
+					<div id="result">
+						Here goes your results... Calculate first!
+					</div>
+					<br><br>
+				</div>
+			</div>
+		</div>
+	
+		<script src="./index.js"></script>
+	</body>
+</html>

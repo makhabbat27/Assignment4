@@ -1,0 +1,68 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #c55b5b;
+}
+input{
+	cursor: pointer;
+}
+select{
+	cursor: pointer;
+}
+
+.main{
+	width: 100%;
+	padding-top: 2em;
+}
+.main h1{
+	text-align: center;
+	font-size: 26px;
+	color: #163e3a;
+	letter-spacing: 0.5em;
+	line-height: normal;
+}
+
+.calculator-wrap{
+	width: 50%;
+	margin: auto;
+	background: #fff;
+}
+.calculator{
+	width: 100%;
+	padding: 1.4em;
+}
+.category-box{
+	width: 100%;
+	padding: 0.5em 0;
+}
+.checkbox-box{
+	width: 100%;
+	padding: 0.25em 0;
+}
+.checkbox-box label{
+	cursor: pointer;
+}
+button{
+	background: #3d9690;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	border: 2px solid #fff;
+	border-radius: 3px;
+	margin: 0.5em 0;
+	font-size: 16px;
+	padding: 0.35em 1em;
+	transition: 0.5s ease;
+}
+button:hover{
+	background: transparent;
+	border: 2px solid #3d9690;
+	color: #3d9690;
+}
+.result{
+	width: 100%;
+	padding: 0.7em 0;
+}
